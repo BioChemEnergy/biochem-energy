@@ -27,7 +27,7 @@ export default function Home() {
       <main className="p-6">
        <section className="relative w-full h-[400px] md:h-[500px]">
   <Image
-    src="/hpicture1.png"
+    src="/picture1.png"
     alt="Nature with mountains and lake"
     layout="fill"
     objectFit="cover"
