@@ -25,15 +25,16 @@ export default function Home() {
       </header>
 
       <main className="p-6">
-        <section className="relative w-full h-[400px] md:h-[500px]">
-          <Image
-            src="/picture1.png"
-            alt="Nature with mountains and lake"
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-        </section>
+       <section className="relative w-full h-[500px] md:h-[600px] bg-white">
+  <Image
+    src="/picture1.png"
+    alt="Nature with mountains and lake"
+    layout="fill"
+    objectFit="contain"
+    objectPosition="top"
+    priority
+  />
+</section>
 
         <section id="about" className="mt-12">
           <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
