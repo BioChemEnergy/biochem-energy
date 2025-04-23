@@ -25,11 +25,21 @@ export default function Home() {
       </header>
 
       <main className="p-6">
-        <section className="bg-green-50 p-10 rounded-xl shadow text-center">
-          <h1 className="text-4xl font-bold mb-4 text-green-800">Innovative solutions for a sustainable future</h1>
-          <p className="text-lg text-gray-600">We focus on bioenergy, biotechnology and circular economy projects.</p>
-          <Link href="#projects" className="inline-block mt-6 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">View Projects</Link>
-        </section>
+       <section className="relative w-full h-[400px] md:h-[500px]">
+  <Image
+    src="/hpicture1.png"
+    alt="Nature with mountains and lake"
+    layout="fill"
+    objectFit="cover"
+    priority
+  />
+  <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center px-4">
+    <h1 className="text-3xl md:text-5xl font-bold">Innovative solutions for a sustainable future</h1>
+    <p className="mt-4 text-lg md:text-xl">We focus on bioenergy, biotechnology and circular economy projects.</p>
+    <Link href="#projects" className="mt-6 inline-block bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">View Projects</Link>
+  </div>
+</section>
+
 
         <section id="about" className="mt-12">
           <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
