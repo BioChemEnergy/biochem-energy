@@ -13,7 +13,7 @@ export default function Home() {
 
       <header className="flex justify-between items-center px-6 py-4 bg-white shadow">
         <div className="flex items-center space-x-3">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={120} height={80} />
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
             </div>
         <nav className="space-x-4 text-sm">
           <Link href="#about">About Us</Link>
