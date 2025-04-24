@@ -31,6 +31,7 @@ export default function Home() {
             alt="Nature with mountains and lake"
             layout="fill"
             objectFit="cover"
+            objectPosition="top"
             priority
           />
         </section>
