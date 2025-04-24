@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex justify-between items-center px-6 py-4 bg-white shadow">
+      <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white shadow">
         <div className="flex items-center space-x-3">
           <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={200} />
         </div>
