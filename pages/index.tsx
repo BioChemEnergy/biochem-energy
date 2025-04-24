@@ -25,49 +25,66 @@ export default function Home() {
       </header>
 
       <main className="p-0">
-       <section className="relative w-full h-[500px]">
-  <Image
-    src="/picture1.png"
-    alt="Nature with mountains and lake"
-    layout="fill"
-    objectFit="cover"
-    priority
-  />
-</section>
-
-        <section id="about" className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
-          <p className="mt-4 text-gray-700">BioChem Energy is a company focused on research and innovation in bioenergy and sustainable technologies. Our goal is to contribute to the development of ecologically and economically efficient solutions.</p>
+        <section className="relative w-full h-[500px]">
+          <Image
+            src="/picture1.png"
+            alt="Nature with mountains and lake"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
         </section>
 
-        <section id="projects" className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-800">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            <div className="bg-white p-4 rounded shadow">
-              <h3 className="font-semibold text-green-700">April 2024</h3>
-              <p className="font-bold">Development of biofuels from waste</p>
+        <div className="px-6 md:px-12">
+
+          <section id="about" className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
+            <p className="mt-4 text-gray-700">
+              BioChem Energy is a company focused on research and innovation in bioenergy and sustainable technologies.
+              Our goal is to contribute to the development of ecologically and economically efficient solutions.
+            </p>
+          </section>
+
+          <section id="projects" className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-800">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+              <div className="bg-white p-4 rounded shadow">
+                <h3 className="font-semibold text-green-700">April 2024</h3>
+                <p className="font-bold">Development of biofuels from waste</p>
+              </div>
+              <div className="bg-white p-4 rounded shadow">
+                <h3 className="font-semibold text-green-700">January 2024</h3>
+                <p className="font-bold">Biomass valorization</p>
+              </div>
+              <div className="bg-white p-4 rounded shadow">
+                <h3 className="font-semibold text-green-700">September 2023</h3>
+                <p className="font-bold">Plastic packaging recycling</p>
+              </div>
             </div>
-            <div className="bg-white p-4 rounded shadow">
-              <h3 className="font-semibold text-green-700">January 2024</h3>
-              <p className="font-bold">Biomass valorization</p>
-            </div>
-            <div className="bg-white p-4 rounded shadow">
-              <h3 className="font-semibold text-green-700">September 2023</h3>
-              <p className="font-bold">Plastic packaging recycling</p>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="economy" className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
-          <p className="mt-4 text-gray-700">We support the transition to a circular model that minimizes waste and promotes efficient resource use through biotechnology like cricket-based organic recycling.</p>
-        </section>
+          <section id="economy" className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
+            <p className="mt-4 text-gray-700">
+              We support the transition to a circular model that minimizes waste and promotes efficient resource use
+              through biotechnology like cricket-based organic recycling.
+            </p>
+          </section>
 
-        <section id="contact" className="mt-12 bg-blue-50 p-6 rounded-xl shadow text-center">
-          <h2 className="text-2xl font-bold text-blue-800">Interested in working with us?</h2>
-          <p className="mt-2 text-gray-600">Contact us to learn more about our projects or to propose collaboration or investment.</p>
-          <Link href="mailto:info@biochemenergy.sk" className="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Contact Us</Link>
-        </section>
+          <section id="contact" className="mt-12 bg-blue-50 p-6 rounded-xl shadow text-center">
+            <h2 className="text-2xl font-bold text-blue-800">Interested in working with us?</h2>
+            <p className="mt-2 text-gray-600">
+              Contact us to learn more about our projects or to propose collaboration or investment.
+            </p>
+            <Link
+              href="mailto:info@biochemenergy.sk"
+              className="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+            >
+              Contact Us
+            </Link>
+          </section>
+
+        </div>
       </main>
 
       <footer className="mt-12 text-center text-sm text-gray-500 py-4 border-t">
