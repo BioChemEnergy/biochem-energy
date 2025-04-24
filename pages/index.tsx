@@ -24,14 +24,13 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="p-6">
-       <section className="relative w-full h-[500px] md:h-[600px] bg-white">
+      <main className="p-0">
+       <section className="relative w-full h-[500px]">
   <Image
     src="/picture1.png"
     alt="Nature with mountains and lake"
     layout="fill"
-    objectFit="contain"
-    objectPosition="top"
+    objectFit="cover"
     priority
   />
 </section>
