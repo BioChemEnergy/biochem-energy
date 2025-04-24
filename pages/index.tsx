@@ -25,14 +25,12 @@ export default function Home() {
       </header>
 
       <main className="p-0">
-        <section className="relative w-full h-[500px]">
-          <Image
+        <section className="w-full">
+          <img
             src="/picture1.png"
             alt="Nature with mountains and lake"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="top"
-            priority
+            className="w-full h-auto"
+            style={{ display: 'block' }}
           />
         </section>
 
