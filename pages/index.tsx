@@ -20,7 +20,7 @@ export default function Home() {
 
           {/* Stredná sekcia - Tri obrázky technológie */}
           <div className="flex space-x-8">
-            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
+            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
               <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
             </div>
             <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
