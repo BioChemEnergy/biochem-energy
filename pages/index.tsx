@@ -23,11 +23,11 @@ export default function Home() {
             <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
               <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
             </div>
-            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
-              <Image src="/biofuel.png" alt="Biofuel Production" width={230} height={190} />
+            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
+              <Image src="/biofuel.png" alt="Biofuel Production" width={330} height={290} />
             </div>
-            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
-              <Image src="/cvrcky.png" alt="Insect Recycling" width={230} height={190} />
+            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
+              <Image src="/cvrcky.png" alt="Insect Recycling" width={330} height={290} />
             </div>
           </div>
 
