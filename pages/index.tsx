@@ -11,11 +11,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="sticky top-0 z-50 flex flex-col bg-white shadow">
-        {/* Horný rad: logo a menu */}
+      <header className="sticky top-0 z-50 bg-white shadow">
         <div className="flex justify-between items-center px-8 py-4">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={140} />
-          <nav className="space-x-6 text-sm">
+          {/* Ľavá strana - Logo */}
+          <div className="flex items-center space-x-3">
+            <Image src="/logo.png" alt="BioChem Energy Logo" width={200} height={120} />
+          </div>
+
+          {/* Stredná sekcia - Tri obrázky technológie */}
+          <div className="flex space-x-8">
+            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
+              <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
+            </div>
+            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
+              <Image src="/biofuel.png" alt="Biofuel Production" width={130} height={90} />
+            </div>
+            <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
+              <Image src="/cvrcky.png" alt="Insect Recycling" width={130} height={90} />
+            </div>
+          </div>
+
+          {/* Pravá strana - Menu */}
+          <nav className="space-x-4 text-sm">
             <Link href="#about">About Us</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#economy">Circular Economy</Link>
@@ -23,22 +40,10 @@ export default function Home() {
             <span className="ml-4">SK | EN</span>
           </nav>
         </div>
-
-        {/* Stredný rad: obrázky technológií */}
-        <div className="flex justify-center items-center space-x-16 py-4">
-          <div className="transform transition-transform duration-300 hover:scale-125">
-            <Image src="/decontamination.PNG" alt="Air Decontamination" width={120} height={120} />
-          </div>
-          <div className="transform transition-transform duration-300 hover:scale-125">
-            <Image src="/biofuel.png" alt="Biofuel Production" width={120} height={120} />
-          </div>
-          <div className="transform transition-transform duration-300 hover:scale-125">
-            <Image src="/cvrcky.png" alt="Insect Recycling" width={120} height={120} />
-          </div>
-        </div>
       </header>
 
       <main className="p-0">
+        {/* Úvodný obrázok */}
         <section className="w-full">
           <img
             src="/picture1.png"
@@ -49,7 +54,7 @@ export default function Home() {
         </section>
 
         <div className="px-6 md:px-12">
-          {/* ABOUT US */}
+          {/* About Us */}
           <section id="about" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
             <p className="mt-4 text-gray-700">
@@ -58,7 +63,7 @@ export default function Home() {
             </p>
           </section>
 
-          {/* PROJECTS */}
+          {/* Projects */}
           <section id="projects" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
@@ -77,7 +82,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* CIRCULAR ECONOMY */}
+          {/* Circular Economy */}
           <section id="economy" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
             <p className="mt-4 text-gray-700">
@@ -86,7 +91,7 @@ export default function Home() {
             </p>
           </section>
 
-          {/* CONTACT */}
+          {/* Contact */}
           <section id="contact" className="mt-12 bg-blue-50 p-6 rounded-xl shadow text-center">
             <h2 className="text-2xl font-bold text-blue-800">Interested in working with us?</h2>
             <p className="mt-2 text-gray-600">
