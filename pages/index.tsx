@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex justify-between items-center px-8 py-4">
           {/* Ľavá strana - Logo */}
           <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="BioChem Energy Logo" width={200} height={120} />
+            <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={170} />
           </div>
 
           {/* Stredná sekcia - Tri obrázky technológie */}
@@ -24,10 +24,10 @@ export default function Home() {
               <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
             </div>
             <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
-              <Image src="/biofuel.png" alt="Biofuel Production" width={130} height={90} />
+              <Image src="/biofuel.png" alt="Biofuel Production" width={230} height={190} />
             </div>
             <div className="w-32 h-24 hover:scale-110 transition duration-300 flex items-center justify-center">
-              <Image src="/cvrcky.png" alt="Insect Recycling" width={130} height={90} />
+              <Image src="/cvrcky.png" alt="Insect Recycling" width={230} height={190} />
             </div>
           </div>
 
