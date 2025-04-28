@@ -11,36 +11,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="sticky top-0 z-50 bg-white shadow">
-        <div className="flex justify-between items-center px-8 py-4">
-          {/* Ľavá strana - Logo */}
-          <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={170} />
-          </div>
+     <header className="sticky top-0 z-50 bg-white shadow">
+  <div className="flex justify-between items-center px-8 py-4">
+    {/* Logo */}
+    <div className="flex items-center">
+      <Image src="/logo.png" alt="BioChem Energy Logo" width={220} height={140} />
+    </div>
 
-          {/* Stredná sekcia - Tri obrázky technológie */}
-          <div className="flex space-x-8">
-            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
-              <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
-            </div>
-            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
-              <Image src="/biofuel.png" alt="Biofuel Production" width={330} height={500} />
-            </div>
-            <div className="w-32 h-24 hover:scale-150 transition duration-300 flex items-center justify-center">
-              <Image src="/cvrcky.png" alt="Insect Recycling" width={330} height={500} />
-            </div>
-          </div>
+    {/* Tri obrázky technológií */}
+    <div className="flex justify-center space-x-12 flex-grow">
+      <div className="w-48 h-36 hover:scale-125 transition-transform ease-in-out duration-500 flex items-center justify-center">
+        <Image src="/decontamination.PNG" alt="Air Decontamination" width={180} height={130} />
+      </div>
+      <div className="w-48 h-36 hover:scale-125 transition-transform ease-in-out duration-500 flex items-center justify-center">
+        <Image src="/biofuel.png" alt="Biofuel Production" width={180} height={130} />
+      </div>
+      <div className="w-48 h-36 hover:scale-125 transition-transform ease-in-out duration-500 flex items-center justify-center">
+        <Image src="/cvrcky.png" alt="Insect Recycling" width={180} height={130} />
+      </div>
+    </div>
 
-          {/* Pravá strana - Menu */}
-          <nav className="space-x-4 text-sm">
-            <Link href="#about">About Us</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#economy">Circular Economy</Link>
-            <Link href="#contact">Contact</Link>
-            <span className="ml-4">SK | EN</span>
-          </nav>
-        </div>
-      </header>
+    {/* Menu */}
+    <nav className="space-x-6 text-sm">
+      <Link href="#about">About Us</Link>
+      <Link href="#projects">Projects</Link>
+      <Link href="#economy">Circular Economy</Link>
+      <Link href="#contact">Contact</Link>
+      <span className="ml-4">SK | EN</span>
+    </nav>
+  </div>
+</header>
 
       <main className="p-0">
         {/* Úvodný obrázok */}
