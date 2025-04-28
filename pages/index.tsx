@@ -12,39 +12,30 @@ export default function Home() {
       </Head>
 
       <header className="sticky top-0 z-50 flex flex-col bg-white shadow">
-        <div className="flex justify-between items-center px-6 py-4">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
-          <nav className="space-x-4 text-sm">
+        <div className="flex items-center justify-between px-6 py-2">
+          <div className="flex items-center space-x-6">
+            <Image src="/logo.png" alt="BioChem Energy Logo" width={220} height={130} />
+          </div>
+          <nav className="space-x-6 text-sm">
             <Link href="#about">About Us</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#economy">Circular Economy</Link>
             <Link href="#contact">Contact</Link>
-            <span className="ml-4">SK | EN</span>
+            <span className="ml-2">SK | EN</span>
           </nav>
         </div>
 
-        <div className="flex justify-center items-center space-x-8 px-10 py-4">
-          <Image
-            src="/decontamination.PNG"
-            alt="Air Decontamination"
-            width={120}
-            height={120}
-            className="transition-transform duration-300 hover:scale-110"
-          />
-          <Image
-            src="/biofuel.png"
-            alt="Biofuel Production"
-            width={120}
-            height={120}
-            className="transition-transform duration-300 hover:scale-110"
-          />
-          <Image
-            src="/cvrcky.png"
-            alt="Insect Recycling"
-            width={120}
-            height={120}
-            className="transition-transform duration-300 hover:scale-110"
-          />
+        {/* Technológie - medzi logom a navigáciou */}
+        <div className="flex justify-center items-center space-x-16 px-10 py-4">
+          <div className="transition-transform duration-300 hover:scale-125">
+            <Image src="/decontamination.PNG" alt="Air Decontamination" width={100} height={100} />
+          </div>
+          <div className="transition-transform duration-300 hover:scale-125">
+            <Image src="/biofuel.png" alt="Biofuel Production" width={100} height={100} />
+          </div>
+          <div className="transition-transform duration-300 hover:scale-125">
+            <Image src="/cvrcky.png" alt="Insect Recycling" width={100} height={100} />
+          </div>
         </div>
       </header>
 
