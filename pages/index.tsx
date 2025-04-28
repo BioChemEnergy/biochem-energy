@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Tri obrázky v strede */}
         <div className="flex items-center space-x-8">
-          <Image src="/decontamination.PNG" alt="Air Decontamination" width={200} height={90} />
+          <Image src="/decontamination.PNG" alt="Air Decontamination" width={200} height={60} />
           <Image src="/biofuel.png" alt="Biofuel Production" width={200} height={300} />
           <Image src="/cvrcky.png" alt="Insect Recycling" width={200} height={300} />
         </div>
