@@ -15,7 +15,7 @@ export default function Home() {
   <div className="flex justify-between items-center px-8 py-4">
     {/* Logo */}
     <div className="flex items-center">
-      <Image src="/logo.png" alt="BioChem Energy Logo" width={220} height={140} />
+      <Image src="/logo.png" alt="BioChem Energy Logo" width={280} height={200} />
     </div>
 
     {/* Tri obrázky technológií */}
