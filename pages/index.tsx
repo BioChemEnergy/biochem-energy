@@ -11,21 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* HEADER */}
       <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white shadow">
-        <div className="flex items-center space-x-8">
-          {/* Logo */}
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={150} />
-
-          {/* Tri technológie */}
+        <div className="flex items-center space-x-6">
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={80} />
           <div className="flex space-x-4">
-            <Image src="/decontamination.PNG" alt="decontamination" width={80} height={80} />
-            <Image src="/biofuel.png" alt="Biofuel Technology" width={80} height={80} />
-            <Image src="/cvrcky.png" alt="Insect Recycling" width={80} height={80} />
+            <Image src="/air_decontamination.png" alt="Air Decontamination" width={80} height={80} />
+            <Image src="/biofuel.png" alt="Biofuel Production" width={80} height={80} />
+            <Image src="/crickets.png" alt="Insect Protein" width={80} height={80} />
           </div>
         </div>
-
-        {/* Navigácia */}
         <nav className="space-x-4 text-sm">
           <Link href="#about">About Us</Link>
           <Link href="#projects">Projects</Link>
@@ -35,9 +29,7 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* MAIN */}
       <main className="p-0">
-        {/* Uvodný obrazok */}
         <section className="w-full">
           <img
             src="/picture1.png"
@@ -47,7 +39,6 @@ export default function Home() {
           />
         </section>
 
-        {/* Obsah stranky */}
         <div className="px-6 md:px-12">
 
           <section id="about" className="mt-12">
@@ -100,7 +91,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* FOOTER */}
       <footer className="mt-12 text-center text-sm text-gray-500 py-4 border-t">
         &copy; 2025 BioChem Energy s.r.o. All rights reserved.
       </footer>
