@@ -14,14 +14,14 @@ export default function Home() {
       <header className="sticky top-0 z-50 flex items-center justify-between bg-white shadow px-6 py-2">
         {/* Logo vľavo */}
         <div className="flex items-center">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={160} height={100} />
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={200} height={150} />
         </div>
 
         {/* Tri obrázky v strede */}
         <div className="flex items-center space-x-8">
           <Image src="/decontamination.PNG" alt="Air Decontamination" width={200} height={90} />
-          <Image src="/biofuel.png" alt="Biofuel Production" width={200} height={90} />
-          <Image src="/cvrcky.png" alt="Insect Recycling" width={200} height={90} />
+          <Image src="/biofuel.png" alt="Biofuel Production" width={200} height={140} />
+          <Image src="/cvrcky.png" alt="Insect Recycling" width={200} height={140} />
         </div>
 
         {/* Navigácia vpravo */}
