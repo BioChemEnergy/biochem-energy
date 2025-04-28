@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         
  <section className="flex justify-center items-center space-x-6 mt-8 px-6">
-    <img src="/decontamination.png" alt="Air Decontamination" className="w-1/4" />
+    <img src="/decontamination.png" alt="decontamination" className="w-1/4" />
     <img src="/biofuel.png" alt="Biofuel Technology" className="w-1/4" />
     <img src="/cvrcky.png" alt="Insect Recycling" className="w-1/4" />
   </section>
