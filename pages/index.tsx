@@ -15,9 +15,9 @@ export default function Home() {
         <div className="flex items-center space-x-6">
           <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={80} />
           <div className="flex space-x-4">
-            <Image src="/air_decontamination.png" alt="Air Decontamination" width={80} height={80} />
+            <Image src="/decontamination.PNG" alt="Air Decontamination" width={80} height={80} />
             <Image src="/biofuel.png" alt="Biofuel Production" width={80} height={80} />
-            <Image src="/crickets.png" alt="Insect Protein" width={80} height={80} />
+            <Image src="/cvrcky.png" alt="Insect Protein" width={80} height={80} />
           </div>
         </div>
         <nav className="space-x-4 text-sm">
