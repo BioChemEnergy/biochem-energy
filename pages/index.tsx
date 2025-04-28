@@ -33,7 +33,13 @@ export default function Home() {
             style={{ display: 'block' }}
           />
         </section>
-
+        
+ <section className="flex justify-center items-center space-x-6 mt-8 px-6">
+    <img src="/decontamination.png" alt="Air Decontamination" className="w-1/4" />
+    <img src="/biofuel.png" alt="Biofuel Technology" className="w-1/4" />
+    <img src="/cvrcky.png" alt="Insect Recycling" className="w-1/4" />
+  </section>
+                
         <div className="px-6 md:px-12">
 
           <section id="about" className="mt-12">
