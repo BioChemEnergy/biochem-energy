@@ -11,16 +11,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-white shadow">
-  <div className="flex items-center space-x-8">
+   <header className="sticky top-0 z-50 flex flex-col bg-white shadow">
+  <div className="flex justify-between items-center px-6 py-4">
     <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
+    <nav className="space-x-4 text-sm">
+      <Link href="#about">About Us</Link>
+      <Link href="#projects">Projects</Link>
+      <Link href="#economy">Circular Economy</Link>
+      <Link href="#contact">Contact</Link>
+      <span className="ml-4">SK | EN</span>
+    </nav>
+  </div>
 
-    <div className="flex space-x-6 ml-6">
-      <Image src="/decontamination.PNG" alt="decontamination" width={100} height={100} />
-      <Image src="/biofuel.png" alt="Biofuel Production" width={100} height={100} />
-      <Image src="/cvrcky.png" alt="Insect Recycling" width={100} height={100} />
+  <div className="flex justify-center items-center space-x-8 px-10 py-4">
+    <div className="flex-1 flex justify-center">
+      <Image src="/decontamination.PNG" alt="Air Decontamination" width={150} height={150} />
+    </div>
+    <div className="flex-1 flex justify-center">
+      <Image src="/biofuel.png" alt="Biofuel Production" width={150} height={150} />
+    </div>
+    <div className="flex-1 flex justify-center">
+      <Image src="/cvrcky.png" alt="Insect Recycling" width={150} height={150} />
     </div>
   </div>
+</header>
 
   <nav className="space-x-4 text-sm">
     <Link href="#about">About Us</Link>
