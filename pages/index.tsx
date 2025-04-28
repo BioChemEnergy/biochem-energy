@@ -12,29 +12,28 @@ export default function Home() {
       </Head>
 
       <header className="sticky top-0 z-50 flex flex-col bg-white shadow">
-        <div className="flex items-center justify-between px-6 py-2">
-          <div className="flex items-center space-x-6">
-            <Image src="/logo.png" alt="BioChem Energy Logo" width={220} height={130} />
-          </div>
+        {/* Horný rad: logo a menu */}
+        <div className="flex justify-between items-center px-8 py-4">
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={140} />
           <nav className="space-x-6 text-sm">
             <Link href="#about">About Us</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#economy">Circular Economy</Link>
             <Link href="#contact">Contact</Link>
-            <span className="ml-2">SK | EN</span>
+            <span className="ml-4">SK | EN</span>
           </nav>
         </div>
 
-        {/* Technológie - medzi logom a navigáciou */}
-        <div className="flex justify-center items-center space-x-16 px-10 py-4">
-          <div className="transition-transform duration-300 hover:scale-125">
-            <Image src="/decontamination.PNG" alt="Air Decontamination" width={100} height={100} />
+        {/* Stredný rad: obrázky technológií */}
+        <div className="flex justify-center items-center space-x-16 py-4">
+          <div className="transform transition-transform duration-300 hover:scale-125">
+            <Image src="/decontamination.PNG" alt="Air Decontamination" width={120} height={120} />
           </div>
-          <div className="transition-transform duration-300 hover:scale-125">
-            <Image src="/biofuel.png" alt="Biofuel Production" width={100} height={100} />
+          <div className="transform transition-transform duration-300 hover:scale-125">
+            <Image src="/biofuel.png" alt="Biofuel Production" width={120} height={120} />
           </div>
-          <div className="transition-transform duration-300 hover:scale-125">
-            <Image src="/cvrcky.png" alt="Insect Recycling" width={100} height={100} />
+          <div className="transform transition-transform duration-300 hover:scale-125">
+            <Image src="/cvrcky.png" alt="Insect Recycling" width={120} height={120} />
           </div>
         </div>
       </header>
@@ -50,7 +49,7 @@ export default function Home() {
         </section>
 
         <div className="px-6 md:px-12">
-
+          {/* ABOUT US */}
           <section id="about" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
             <p className="mt-4 text-gray-700">
@@ -59,6 +58,7 @@ export default function Home() {
             </p>
           </section>
 
+          {/* PROJECTS */}
           <section id="projects" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
@@ -77,6 +77,7 @@ export default function Home() {
             </div>
           </section>
 
+          {/* CIRCULAR ECONOMY */}
           <section id="economy" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
             <p className="mt-4 text-gray-700">
@@ -85,6 +86,7 @@ export default function Home() {
             </p>
           </section>
 
+          {/* CONTACT */}
           <section id="contact" className="mt-12 bg-blue-50 p-6 rounded-xl shadow text-center">
             <h2 className="text-2xl font-bold text-blue-800">Interested in working with us?</h2>
             <p className="mt-2 text-gray-600">
@@ -97,7 +99,6 @@ export default function Home() {
               Contact Us
             </Link>
           </section>
-
         </div>
       </main>
 
