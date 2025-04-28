@@ -11,27 +11,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="sticky top-0 z-50 flex items-center justify-between bg-white shadow px-6 py-2">
-        {/* Logo vľavo */}
-        <div className="flex items-center">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={250} height={200} />
+      <header className="sticky top-0 z-50 flex flex-col bg-white shadow">
+        <div className="flex justify-between items-center px-6 py-4">
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
+          <nav className="space-x-4 text-sm">
+            <Link href="#about">About Us</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#economy">Circular Economy</Link>
+            <Link href="#contact">Contact</Link>
+            <span className="ml-4">SK | EN</span>
+          </nav>
         </div>
 
-        {/* Tri obrázky v strede */}
-        <div className="flex items-center space-x-8">
-          <Image src="/decontamination.PNG" alt="Air Decontamination" width={200} height={60} />
-          <Image src="/biofuel.png" alt="Biofuel Production" width={200} height={400} />
-          <Image src="/cvrcky.png" alt="Insect Recycling" width={200} height={400} />
+        <div className="flex justify-center items-center space-x-8 px-10 py-4">
+          <Image
+            src="/decontamination.PNG"
+            alt="Air Decontamination"
+            width={120}
+            height={120}
+            className="transition-transform duration-300 hover:scale-110"
+          />
+          <Image
+            src="/biofuel.png"
+            alt="Biofuel Production"
+            width={120}
+            height={120}
+            className="transition-transform duration-300 hover:scale-110"
+          />
+          <Image
+            src="/cvrcky.png"
+            alt="Insect Recycling"
+            width={120}
+            height={120}
+            className="transition-transform duration-300 hover:scale-110"
+          />
         </div>
-
-        {/* Navigácia vpravo */}
-        <nav className="flex items-center space-x-4 text-sm">
-          <Link href="#about">About Us</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#economy">Circular Economy</Link>
-          <Link href="#contact">Contact</Link>
-          <span className="ml-4">SK | EN</span>
-        </nav>
       </header>
 
       <main className="p-0">
@@ -45,6 +59,7 @@ export default function Home() {
         </section>
 
         <div className="px-6 md:px-12">
+
           <section id="about" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
             <p className="mt-4 text-gray-700">
@@ -91,6 +106,7 @@ export default function Home() {
               Contact Us
             </Link>
           </section>
+
         </div>
       </main>
 
