@@ -11,26 +11,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white shadow">
-        <div className="flex items-center space-x-8">
-          {/* Logo */}
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={100} />
-
-          {/* Three Key Technology Images */}
-          <div className="flex space-x-6">
-            <Image src="/decontamination.PNG" alt="Air Decontamination" width={80} height={80} />
-            <Image src="/biofuel.png" alt="Biofuel Production" width={80} height={80} />
-            <Image src="/cvrcky.png" alt="Insect Recycling" width={80} height={80} />
-          </div>
+      <header className="sticky top-0 z-50 flex items-center justify-between bg-white shadow px-6 py-2">
+        {/* Logo vľavo */}
+        <div className="flex items-center">
+          <Image src="/logo.png" alt="BioChem Energy Logo" width={140} height={80} />
         </div>
 
-        {/* Navigation */}
-        <nav className="space-x-6 text-sm">
+        {/* Tri obrázky v strede */}
+        <div className="flex items-center space-x-8">
+          <Image src="/decontamination.PNG" alt="Air Decontamination" width={90} height={90} />
+          <Image src="/biofuel.png" alt="Biofuel Production" width={90} height={90} />
+          <Image src="/cvrcky.png" alt="Insect Recycling" width={90} height={90} />
+        </div>
+
+        {/* Navigácia vpravo */}
+        <nav className="flex items-center space-x-4 text-sm">
           <Link href="#about">About Us</Link>
           <Link href="#projects">Projects</Link>
           <Link href="#economy">Circular Economy</Link>
           <Link href="#contact">Contact</Link>
-          <span className="ml-2">SK | EN</span>
+          <span className="ml-4">SK | EN</span>
         </nav>
       </header>
 
