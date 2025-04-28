@@ -19,7 +19,7 @@ export default function Home() {
 
           {/* Tri technológie */}
           <div className="flex space-x-4">
-            <Image src="/decontamination.png" alt="decontamination" width={80} height={80} />
+            <Image src="/decontamination.PNG" alt="decontamination" width={80} height={80} />
             <Image src="/biofuel.png" alt="Biofuel Technology" width={80} height={80} />
             <Image src="/cvrcky.png" alt="Insect Recycling" width={80} height={80} />
           </div>
