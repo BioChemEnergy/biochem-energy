@@ -11,23 +11,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white shadow">
-        <div className="flex items-center space-x-6">
-          <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={80} />
-          <div className="flex space-x-4">
-            <Image src="/decontamination.PNG" alt="Air Decontamination" width={80} height={80} />
-            <Image src="/biofuel.png" alt="Biofuel Production" width={80} height={80} />
-            <Image src="/cvrcky.png" alt="Insect Protein" width={80} height={80} />
-          </div>
-        </div>
-        <nav className="space-x-4 text-sm">
-          <Link href="#about">About Us</Link>
-          <Link href="#projects">Projects</Link>
-          <Link href="#economy">Circular Economy</Link>
-          <Link href="#contact">Contact</Link>
-          <span className="ml-4">SK | EN</span>
-        </nav>
-      </header>
+    <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-white shadow">
+  <div className="flex items-center space-x-8">
+    <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
+
+    <div className="flex space-x-6 ml-6">
+      <Image src="/decontamination.PNG" alt="decontamination" width={100} height={100} />
+      <Image src="/biofuel.png" alt="Biofuel Production" width={100} height={100} />
+      <Image src="/cvrcky.png" alt="Insect Recycling" width={100} height={100} />
+    </div>
+  </div>
+
+  <nav className="space-x-4 text-sm">
+    <Link href="#about">About Us</Link>
+    <Link href="#projects">Projects</Link>
+    <Link href="#economy">Circular Economy</Link>
+    <Link href="#contact">Contact</Link>
+    <span className="ml-4">SK | EN</span>
+  </nav>
+</header>
 
       <main className="p-0">
         <section className="w-full">
