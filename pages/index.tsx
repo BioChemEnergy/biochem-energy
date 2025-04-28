@@ -36,14 +36,6 @@ export default function Home() {
   </div>
 </header>
 
-  <nav className="space-x-4 text-sm">
-    <Link href="#about">About Us</Link>
-    <Link href="#projects">Projects</Link>
-    <Link href="#economy">Circular Economy</Link>
-    <Link href="#contact">Contact</Link>
-    <span className="ml-4">SK | EN</span>
-  </nav>
-</header>
 
       <main className="p-0">
         <section className="w-full">
