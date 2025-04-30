@@ -104,7 +104,7 @@ export default function ProjectsSection() {
               It is based on advanced cold plasma and photocatalytic oxidation and has been tested in collaboration with the European Space Agency.
             </p>
             <div className="mt-4">
-              <Image src="/decontamination.jpg" alt="Air Technology" width={600} height={350} />
+              <Image src="/decontamination.PNG" alt="Air Technology" width={600} height={350} />
             </div>
           </div>
         )}
@@ -129,7 +129,7 @@ export default function ProjectsSection() {
               Our system transforms organic waste into valuable biobutanol and biodegradable plastics. The modular unit is scalable and ideal for urban or industrial applications focused on reducing environmental impact.
             </p>
             <div className="mt-4">
-              <Image src="/biofuel.jpg" alt="Biofuel Technology" width={600} height={350} />
+              <Image src="/biofuel.png" alt="Biofuel Technology" width={600} height={350} />
             </div>
           </div>
         )}
@@ -154,7 +154,7 @@ export default function ProjectsSection() {
               We design and manufacture autonomous 3D-printed insect habitats that convert food waste into two valuable outputs: protein for pets and nutrient-rich soil substrate for agriculture and gardening.
             </p>
             <div className="mt-4">
-              <Image src="/cvrcky.jpg" alt="Insect Project" width={600} height={350} />
+              <Image src="/cvrcky.png" alt="Insect Project" width={600} height={350} />
             </div>
           </div>
         )}
