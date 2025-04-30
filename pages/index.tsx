@@ -141,7 +141,7 @@ function ProjectsSection() {
       <div className="mb-8">
         <h3 className="text-xl font-semibold text-green-700">Biomass to Biofuel System</h3>
         <p className="mt-2 text-gray-700">
-          Conversion of municipal waste into clean, renewable biofuel through a compact processing unit.
+          Conversion of wasted biomass and municipal waste into clean, renewable biofuel through a compact processing unit.
         </p>
         <button onClick={() => toggleProject('project2')} className="mt-2 text-blue-600 hover:underline">
           {openProject === 'project2' ? 'Hide details' : 'Learn more'}
