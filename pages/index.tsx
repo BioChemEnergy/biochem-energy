@@ -56,12 +56,18 @@ export default function Home() {
         <div className="px-6 md:px-12">
           {/* About Us */}
           <section id="about" className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
-            <p className="mt-4 text-gray-700">
-              BioChem Energy is a company focused on research and innovation in bioenergy and sustainable technologies.
-              Our goal is to contribute to the development of ecologically and economically efficient solutions.
-            </p>
-          </section>
+  <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
+  <p className="mt-4 text-gray-700">
+    <strong>BioChem Energy s.r.o.</strong> is a research and development company dedicated to ecological and sustainable technologies. Our primary focus is on the development of innovative solutions for biomass waste processing, alternative biofuel production, and advanced air decontamination systems.
+  </p>
+  <p className="mt-4 text-gray-700">
+    The company’s expertise builds on years of research experience led by its managing director, <strong>Ing. Maroš Palko, PhD</strong>, who is actively involved in scientific projects at the Faculty of Mechanical Engineering at the Technical University of Košice. These include collaborations on national and international research initiatives, including projects with the <strong>European Space Agency (ESA)</strong>, with a focus on air purification technologies.
+  </p>
+  <p className="mt-4 text-gray-700">
+    At BioChem Energy, we aim to bridge the gap between academic research and industrial application. We are committed to supporting the <strong>principles of the circular economy</strong> and developing technologies that promote environmental sustainability and efficient use of natural resources.
+  </p>
+</section>
+
 
           {/* Projects */}
           <section id="projects" className="mt-12">
