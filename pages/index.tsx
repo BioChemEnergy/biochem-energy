@@ -128,7 +128,7 @@ function ProjectsSection() {
           <div className="mt-4 border-t pt-4">
             <p className="text-gray-700">
               Our air decontamination technology eliminates pathogens, viruses, and harmful particles without using filters.
-              It is based on advanced cold plasma and photocatalytic oxidation and has been tested in collaboration with the European Space Agency.
+              It is based on advanced cold plasma and photocatalytic oxidation and will be tested in collaboration with the European Space Agency.
             </p>
             <div className="mt-4">
               <Image src="/decontamination.PNG" alt="Air Technology" width={600} height={350} />
