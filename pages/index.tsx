@@ -46,7 +46,7 @@ export default function Home() {
         {/* Úvodný obrázok */}
         <section className="w-full">
           <img
-            src="/picture2.png"
+            src="/picture3.png"
             alt="Nature with mountains and lake"
             className="w-full h-auto"
             style={{ display: 'block' }}
