@@ -70,23 +70,99 @@ export default function Home() {
 
 
           {/* Projects */}
-          <section id="projects" className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-800">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="font-semibold text-green-700">April 2024</h3>
-                <p className="font-bold">Development of biofuels from waste</p>
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="font-semibold text-green-700">January 2024</h3>
-                <p className="font-bold">Biomass valorization</p>
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="font-semibold text-green-700">September 2023</h3>
-                <p className="font-bold">Plastic packaging recycling</p>
-              </div>
+       import { useState } from 'react';
+import Image from 'next/image';
+
+export default function ProjectsSection() {
+  const [openProject, setOpenProject] = useState<string | null>(null);
+
+  const toggleProject = (projectId: string) => {
+    setOpenProject(openProject === projectId ? null : projectId);
+  };
+
+  return (
+    <section id="projects" className="mt-12 px-6 md:px-12">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
+
+      {/* Project 1 */}
+      <div className="mb-8">
+        <h3 className="text-xl font-semibold text-green-700">Air Decontamination Technology</h3>
+        <p className="mt-2 text-gray-700">
+          Development of innovative air purification systems using cold plasma and photocatalysis.
+        </p>
+        <button
+          onClick={() => toggleProject('project1')}
+          className="mt-2 text-blue-600 hover:underline"
+        >
+          {openProject === 'project1' ? 'Hide details' : 'Learn more'}
+        </button>
+
+        {openProject === 'project1' && (
+          <div className="mt-4 border-t pt-4">
+            <p className="text-gray-700">
+              Our air decontamination technology eliminates pathogens, viruses, and harmful particles without using filters.
+              It is based on advanced cold plasma and photocatalytic oxidation and has been tested in collaboration with the European Space Agency.
+            </p>
+            <div className="mt-4">
+              <Image src="/decontamination.jpg" alt="Air Technology" width={600} height={350} />
             </div>
-          </section>
+          </div>
+        )}
+      </div>
+
+      {/* Project 2 */}
+      <div className="mb-8">
+        <h3 className="text-xl font-semibold text-green-700">Biomass to Biofuel System</h3>
+        <p className="mt-2 text-gray-700">
+          Conversion of municipal waste into clean, renewable biofuel through a compact processing unit.
+        </p>
+        <button
+          onClick={() => toggleProject('project2')}
+          className="mt-2 text-blue-600 hover:underline"
+        >
+          {openProject === 'project2' ? 'Hide details' : 'Learn more'}
+        </button>
+
+        {openProject === 'project2' && (
+          <div className="mt-4 border-t pt-4">
+            <p className="text-gray-700">
+              Our system transforms organic waste into valuable biobutanol and biodegradable plastics. The modular unit is scalable and ideal for urban or industrial applications focused on reducing environmental impact.
+            </p>
+            <div className="mt-4">
+              <Image src="/biofuel.jpg" alt="Biofuel Technology" width={600} height={350} />
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Project 3 */}
+      <div className="mb-8">
+        <h3 className="text-xl font-semibold text-green-700">Insect Protein & Soil Substrate</h3>
+        <p className="mt-2 text-gray-700">
+          Kitchen waste is transformed by crickets into high-value protein for pet food and natural fertilizer.
+        </p>
+        <button
+          onClick={() => toggleProject('project3')}
+          className="mt-2 text-blue-600 hover:underline"
+        >
+          {openProject === 'project3' ? 'Hide details' : 'Learn more'}
+        </button>
+
+        {openProject === 'project3' && (
+          <div className="mt-4 border-t pt-4">
+            <p className="text-gray-700">
+              We design and manufacture autonomous 3D-printed insect habitats that convert food waste into two valuable outputs: protein for pets and nutrient-rich soil substrate for agriculture and gardening.
+            </p>
+            <div className="mt-4">
+              <Image src="/cvrcky.jpg" alt="Insect Project" width={600} height={350} />
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 
           {/* Circular Economy */}
           <section id="economy" className="mt-12">
