@@ -99,16 +99,55 @@ export default function Home() {
 
           {/* Contact */}
           <section id="contact" className="mt-12 bg-blue-50 p-6 rounded-xl shadow text-center">
-            <h2 className="text-2xl font-bold text-blue-800">Interested in working with us?</h2>
-            <p className="mt-2 text-gray-600">
-              Contact us to learn more about our projects or to propose collaboration or investment.
-            </p>
-            <Link
-              href="mailto:info@biochemenergy.sk"
-              className="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+            <h2 className="text-2xl font-bold text-blue-800 mb-4">Interested in working with us?</h2>
+            <form
+              action="https://formsubmit.co/bce.biochem@gmail.com"
+              method="POST"
+              className="max-w-xl mx-auto text-left space-y-4"
             >
-              Contact Us
-            </Link>
+              <input type="hidden" name="_captcha" value="false" />
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="w-full px-4 py-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Company</label>
+                <input
+                  type="text"
+                  name="company"
+                  className="w-full px-4 py-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 border rounded"
+                />
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Message</label>
+                <textarea
+                  name="message"
+                  rows={4}
+                  required
+                  className="w-full px-4 py-2 border rounded"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700"
+              >
+                Send Message
+              </button>
+            </form>
           </section>
         </div>
       </main>
