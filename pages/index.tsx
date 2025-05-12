@@ -73,10 +73,27 @@ export default function Home() {
           <ProjectsSection />
 
           {/* Circular Economy */}
-          <section id="economy" className="mt-12">
+          <section id="economy" className="mt-12 px-6 md:px-0">
             <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
             <p className="mt-4 text-gray-700">
-              We support the transition to a circular model that minimizes waste and promotes efficient resource use through biotechnology like cricket-based organic recycling.
+              At <strong>BioChem Energy</strong>, we are committed to the principles of the <strong>circular economy</strong> — a sustainable model that aims to minimize waste and continuously reuse resources through innovative technologies.
+            </p>
+            <p className="mt-4 text-gray-700">
+              All of our key projects reflect this philosophy:
+            </p>
+            <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+              <li>
+                <strong>Air decontamination technologies</strong> help restore indoor air quality without disposable filters, promoting <em>clean air without generating waste</em>.
+              </li>
+              <li>
+                <strong>Biomass-to-biofuel systems</strong> convert municipal waste into <em>renewable fuels and biodegradable materials</em>, supporting resource recovery instead of landfilling.
+              </li>
+              <li>
+                <strong>Insect protein production</strong> uses food waste as a resource, turning it into <em>valuable protein and natural soil substrate</em>, thus closing the biological cycle.
+              </li>
+            </ul>
+            <p className="mt-4 text-gray-700">
+              Through these solutions, we are actively reducing environmental impact, supporting climate goals, and promoting responsible innovation. Every activity and technology we develop is a step toward a cleaner, <strong>more circular and resilient future</strong>.
             </p>
           </section>
 
