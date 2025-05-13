@@ -61,12 +61,30 @@ export default function Home() {
 
           <ProjectsSection />
 
-          <section id="economy" className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
-            <p className="mt-4 text-gray-700">
-              At BioChem Energy, we embrace the principles of the circular economy by developing technologies that reduce waste and reuse resources. All three of our primary project areas — air decontamination, biomass-to-biofuel systems, and insect-based organic recycling — reflect this commitment. Each technology contributes to reducing environmental impact, closing resource loops, and supporting sustainable development.
-            </p>
-          </section>
+          <section id="economy" className="mt-12 px-6 md:px-12">
+  <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
+  <p className="mt-4 text-gray-700">
+    At <strong>BioChem Energy</strong>, we are committed to the principles of the <strong>circular economy</strong> — a sustainable model that aims to minimize waste and continuously reuse resources through innovative technologies.
+  </p>
+  <p className="mt-4 text-gray-700">
+    All of our key projects reflect this philosophy:
+  </p>
+  <ul className="list-disc list-inside mt-2 text-gray-700 space-y-2">
+    <li>
+      <strong>Air decontamination technologies</strong> help restore indoor air quality without disposable filters, promoting <em>clean air without generating waste</em>.
+    </li>
+    <li>
+      <strong>Biomass-to-biofuel systems</strong> convert municipal waste into <em>renewable fuels and biodegradable materials</em>, supporting resource recovery instead of landfilling.
+    </li>
+    <li>
+      <strong>Insect protein production</strong> uses food waste as a resource, turning it into <em>valuable protein and natural soil substrate</em>, thus closing the biological cycle.
+    </li>
+  </ul>
+  <p className="mt-4 text-gray-700">
+    Through these solutions, we are actively reducing environmental impact, supporting climate goals, and promoting responsible innovation. Every activity and technology we develop is a step toward a cleaner, <strong>more circular and resilient future</strong>.
+  </p>
+</section>
+
         </div>
       </main>
 
