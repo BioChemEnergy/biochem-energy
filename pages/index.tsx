@@ -38,29 +38,29 @@ export default function Home() {
       </Head>
 
       <header className="sticky top-0 z-50 bg-white shadow">
-        <div className="flex justify-between items-center px-8 py-4">
-          <div className="flex items-center">
-            <Image src="/logo.png" alt="BioChem Energy Logo" width={280} height={200} />
+        <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-4">
+          <div className="flex items-center mb-4 md:mb-0">
+            <Image src="/logo.png" alt="BioChem Energy Logo" width={180} height={120} />
           </div>
 
-          <div className="flex justify-center space-x-12 flex-grow">
-            <div className="w-48 h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
-              <Image src="/decontamination.PNG" alt="Air Decontamination" width={180} height={130} />
+          <div className="flex justify-center space-x-4 md:space-x-12 flex-wrap md:flex-nowrap">
+            <div className="w-28 md:w-48 h-24 md:h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
+              <Image src="/decontamination.PNG" alt="Air Decontamination" width={130} height={90} />
             </div>
-            <div className="w-48 h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
-              <Image src="/biofuel.png" alt="Biofuel Production" width={180} height={130} />
+            <div className="w-28 md:w-48 h-24 md:h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
+              <Image src="/biofuel.png" alt="Biofuel Production" width={130} height={90} />
             </div>
-            <div className="w-48 h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
-              <Image src="/cvrcky.png" alt="Insect Recycling" width={180} height={130} />
+            <div className="w-28 md:w-48 h-24 md:h-36 hover:scale-110 transition-transform ease-in-out duration-500 flex items-center justify-center">
+              <Image src="/cvrcky.png" alt="Insect Recycling" width={130} height={90} />
             </div>
           </div>
 
-          <nav className="space-x-6 text-sm">
+          <nav className="mt-4 md:mt-0 flex flex-wrap justify-center gap-4 text-sm">
             <Link href="#about">About Us</Link>
             <Link href="#projects">Projects</Link>
             <Link href="#economy">Circular Economy</Link>
             <Link href="#contact">Contact</Link>
-            <span className="ml-4">SK | EN</span>
+            <span className="ml-0 md:ml-4">SK | EN</span>
           </nav>
         </div>
       </header>
@@ -70,7 +70,7 @@ export default function Home() {
           <img src="/picture3.png" alt="Nature with mountains and lake" className="w-full h-auto" style={{ display: 'block' }} />
         </section>
 
-        <div className="px-6 md:px-12">
+        <div className="px-4 md:px-12">
           <section id="about" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">About Us</h2>
             <p className="mt-4 text-gray-700">
@@ -84,9 +84,8 @@ export default function Home() {
             </p>
           </section>
 
-          <section id="projects" className="mt-12 px-6 md:px-12">
+          <section id="projects" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
-
             {[
               {
                 id: 'project1',
@@ -128,7 +127,7 @@ export default function Home() {
             ))}
           </section>
 
-          <section id="economy" className="mt-12 px-6 md:px-12">
+          <section id="economy" className="mt-12">
             <h2 className="text-2xl font-bold text-gray-800">Circular Economy</h2>
             <p className="mt-4 text-gray-700">
               At <strong>BioChem Energy</strong>, we are committed to the principles of the <strong>circular economy</strong> — a sustainable model that aims to minimize waste and continuously reuse resources through innovative technologies.
